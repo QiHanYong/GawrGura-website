@@ -1,0 +1,348 @@
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header .picture-01 {
+    width: 100%;
+}
+
+header .picture-02 {
+    width: 500px;
+}
+
+header .homestage{
+    display: flex;
+    width: 100%;
+}
+
+.background img{
+    width:100%;
+}
+
+.homestage .stage{
+    padding: 10px;
+    margin: 8px 8px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.homestage .stage a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.homestage .stage a:hover{
+    text-decoration: underline;
+}
+
+.homestage .login{
+    padding-left:10px;
+    margin-top:8px;
+    display: flex;
+    justify-content: center;
+}
+
+.homestage .login a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.homestage .login a:hover{
+    text-decoration: underline;
+}
+
+.homestage .login button{
+    height:65px;
+    width:100px;
+    border:none;
+    border-radius:10px;
+    background-color: rgb(196, 196, 196);
+}
+
+.homestage .login button a{
+    padding:20px;
+}
+
+@keyframes button-color{
+    from{background-color:rgb(196, 196, 196);}
+    to{background-color:grey;}
+}
+
+@keyframes button-word-color{
+    from{color:black;}
+    to{color:#fff}
+}
+
+.homestage .login button a:hover{
+    animation-name:button-word-color;
+    animation-fill-mode:forwards;
+}
+
+.homestage .login button:hover{
+    animation-name: button-color;
+    animation-fill-mode: forwards;
+}
+
+.shop{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    height:700px;
+    width:100%;
+    z-index:1; /*Always on top*/
+}
+
+.shop button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    border-radius:20px;
+    border:2px solid rgb(75, 75, 255);
+    transition: ease-out 0.5s;
+    box-shadow:inset 0 0 0 0 rgb(75, 75, 225);
+    color:rgb(0, 0, 216);
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.shop a{
+    text-decoration: none;
+}
+
+.shop .shoppage{
+    margin-right:10px;
+}
+
+.arrow {
+    border: solid rgb(75, 75, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+@keyframes arrowmove{
+    from{border-color: rgb(75, 75, 255);}
+    to{border-color: rgb(255, 255, 255);}
+}
+
+.shop:hover button{
+    box-shadow: inset 300px 0 0 0 rgb(117, 117, 255);
+    cursor:pointer;
+    color:#fff;
+    animation-name: arrowmove;
+    animation-fill-mode: forwards;
+}
+
+.shop:hover .arrow{
+    animation-name:arrowmove;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    cursor:pointer;
+}
+
+
+
+@keyframes cf3FadeInOut {
+    0% {opacity:1;}
+    45% {opacity:1;}
+    55% {opacity:0;}
+    100% {opacity:0;}
+}
+
+.background{
+    display:flex;
+    justify-content: center;
+}
+
+.background .pic1{
+    position:absolute;
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+}
+
+.background img{
+    margin:50px;
+    width:1200px;
+}
+
+.Channel{
+    display:flex;
+    justify-content: center;
+}
+
+.youtube a{
+    margin:20px 50px 20px 0;
+    padding:20px;
+    border-radius: 20px;
+    background-color: rgb(88, 155, 255);
+}
+
+.twitter a{
+    margin:20px 0 20px 50px;
+    padding:20px;
+    border-radius: 20px;
+    background-color: rgb(88, 155, 255);
+}
+
+.Channel a{
+    display:flex;
+    color:#fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@keyframes backcolor{
+    from{background-color:rgb(88, 155, 255);}
+    to{background-color: rgb(37, 255, 255);}
+}
+
+.youtube a:hover, .twitter a:hover{
+    animation-name:backcolor;
+    animation-fill-mode: forwards;
+}
+
+
+.Homenews .imgnews{
+    display:flex;
+    justify-content: center;
+}
+
+.imgnews img{
+    width:400px;
+}
+
+.guranews{
+    display:flex;
+}
+
+.news1{
+    display:flex;
+    padding:50px;
+}
+
+.news1 img{
+    width:500px;
+    border-radius: 20px;
+}
+
+@keyframes change-size1{
+    0%{transform:scale(1.0);}
+    100%{transform:scale(1.08);}
+}
+
+.guranews:hover img{
+    animation-name:change-size1;
+    animation-duration:0.2s;
+    animation-fill-mode: forwards;
+}
+
+.discription{
+    display: flex;
+    margin:50px;
+    align-items: center;
+}
+
+.discription p:hover{
+    text-decoration: underline;
+}
+
+
+.homemusic{
+    display:flex;
+}
+
+.homemusic .view-all{
+    flex:auto;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.homemusic .view-all button{
+    padding:10px;
+    width:150px;
+    border:2px solid rgb(150, 150, 255);
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
+    background-color: rgb(216, 216, 255);
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 rgb(150, 150, 255);
+    outline:none;
+    font-size: 20px;
+    color:rgb(106, 106, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.homemusic .view-all button:hover{
+    box-shadow: inset 300px 0  0 0 rgb(150, 150, 255);
+    cursor: pointer;
+    color: #fff;
+}
+
+.recent{
+    display:flex; 
+    justify-content:right; 
+    color:rgb(255, 102, 0); 
+    padding:10px; 
+    margin-left:20px; 
+    border:2px solid rgb(255, 102, 0); 
+    border-radius: 15px; 
+    width:172px;
+    background-color: rgb(255, 228, 210);
+}
+
+@keyframes color1{
+    from{background-color: none; color:rgb(255, 102, 0);}
+    to{background-color: rgb(255, 102, 0); color:white;}
+}
+
+.recent:hover{
+    animation-name: color1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+    
+.video{
+    display: flex;
+    flex-wrap:wrap;
+    padding:30px;
+}
+
+@keyframes change-size2{
+    0% {transform: scale(1);}
+    100% {transform: scale(1.08);}
+}
+
+.video img{
+    margin:10px;
+    width:295px;
+    border-radius:20px;
+}
+
+.video p{
+    padding-left:5px;
+    width:300px;
+}
+
+.video img:hover{
+    animation-name: change-size2;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;
+}

@@ -1,0 +1,149 @@
+.background img{
+    width:100%;
+}
+
+header{
+    display: flex;
+}
+
+header .picture-1{
+    flex:10;
+}
+
+header .homestage{
+    display: flex;
+}
+
+.homestage .stage{
+    flex: 1;
+    padding:20px;
+    margin-top:8px;
+    display: flex;
+    justify-content: center;
+}
+
+.homestage .stage a{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.homestage .stage a:hover{
+    text-decoration: underline;
+}
+
+.homestage .login{
+    flex: 1;
+    padding-left:10px;
+    margin-top:8px;
+    display: flex;
+    justify-content: center;
+}
+
+.homestage .login a{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.homestage .login a:hover{
+    text-decoration: underline;
+}
+
+.homestage .login button{
+    height:65px;
+    width:100px;
+}
+
+.intro{
+    display:flex;
+}
+
+.picture-2 img{
+    flex:1;
+    width:500px;
+    margin-left:80px;
+}
+
+.Content-1{
+    flex:1;
+    border:6px dashed Cyan;
+    border-radius: 30px;
+    position:relative;
+    margin:110px 200px 0 200px;
+    padding:20px;
+}
+
+.Content-1 .p1{
+    font-size: 26px;
+    font-family: cursive;
+}
+
+.Content-1 .p2{
+    padding: 20px 0 0 100px;
+}
+
+.information {
+    display:flex;
+    justify-content: center;
+    padding-top:20px;
+}
+
+.information button{
+    padding:20px;
+}
+.information button:hover{
+    border-radius: 10px;
+}
+
+.information a{
+    font-size:20px;
+    font-family: cursive;
+    color: rgb(87, 86, 86);
+    text-decoration: none;
+}
+
+.information a:hover{
+    text-decoration: underline;
+}
+
+.foot{
+    display:flex;
+    margin:40px 0 100px 0;
+    padding-right:50px;
+}
+
+.foot .channel{
+    flex:3.5;
+    font-size: 40px;
+    font-family: arial;
+    color: rgb(29, 29, 206);
+    font-weight: 800;
+    display:flex;
+    justify-content: center;
+}
+
+.foot a{
+    font-size: 20px;
+    font-family: serif;
+    color:rgb(78, 78, 78);
+    text-decoration: none;
+}
+
+.foot .yt{
+    flex:1;
+    /* display:flex;
+    justify-content: center; */
+}
+
+.foot .twi{
+    flex:1;
+    /* display:flex;
+    justify-content: center; */
+}
+
+.foot a:hover{
+    text-decoration:underline;
+}

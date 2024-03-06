@@ -1,0 +1,95 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picture-1{
+    display:flex;
+}
+
+header .homestage{
+    display: flex;
+    justify-content: flex-end;
+    flex:auto;
+}
+
+.background img{
+    width:100%;
+}
+
+.homestage .stage{
+    padding:20px;
+    margin-top:8px;
+    display: flex;
+    justify-content: center;
+}
+
+.homestage .stage a{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.homestage .stage a:hover{
+    text-decoration: underline;
+}
+
+.homestage .login{
+    padding-left:10px;
+    margin-top:8px;
+    display: flex;
+    justify-content: center;
+}
+
+.homestage .login a{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.homestage .login a:hover{
+    text-decoration: underline;
+}
+
+.homestage .login button{
+    height:65px;
+    width:100px;
+    border:none;
+    border-radius:10px;
+    background-color: rgb(196, 196, 196);
+}
+
+.homestage .login button a{
+    padding:20px;
+}
+
+@keyframes button-color{
+    from{background-color:rgb(196, 196, 196);}
+    to{background-color:grey;}
+}
+
+@keyframes button-word-color{
+    from{color:black;}
+    to{color:#fff}
+}
+
+.homestage .login button a:hover{
+    animation-name:button-word-color;
+    animation-fill-mode:forwards;
+}
+
+.homestage .login button:hover{
+    animation-name: button-color;
+    animation-fill-mode: forwards;
+}
+
+.newsbackground{
+    display: flex;
+    justify-content: center;
+    padding:80px;
+}
+.newsbackground .newsword{
+    width: 400px;
+}
